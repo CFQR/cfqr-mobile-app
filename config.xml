@@ -4,12 +4,12 @@
   xmlns:gap="http://phonegap.com/ns/1.0"
   xmlns:android="http://schemas.android.com/apk/res/android"
   id="cfqr.questionnaire.app"
-  version="0.17.2"
+  version="0.17.3"
 >
     <name>CFQR</name>
     <description>CFQ-R questionnaire application</description>
     <author email="cfqr.app@gmail.com" href="https://cfqr.github.io/">CFQR app</author>
-    <content src="www/index.html"/>
+    <content src="index.html"/>
     <access origin="*" />
     <icon src="www/icons/256x256.png" />
     <platform name="amazon-fireos">
