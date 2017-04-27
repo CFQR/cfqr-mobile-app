@@ -11,6 +11,7 @@
     <author email="cfqr.app@gmail.com" href="https://cfqr.github.io/">CFQR app</author>
     <content src="index.html"/>
     <access origin="*" />
+    <uses-permission android:name="android.permission.INTERNET" />
     <icon src="www/icons/256x256.png" />
     <platform name="amazon-fireos">
         <icon src="www/icons/android-icon-36x36.png" density="ldpi" />
