@@ -10,8 +10,18 @@
     <description>CFQ-R questionnaire application</description>
     <author email="cfqr.app@gmail.com" href="https://cfqr.github.io/">CFQR app</author>
     <content src="index.html"/>
+
+    <gap:plugin name="cordova-plugin-whitelist" source="npm" />
+    <allow-navigation href="*" />
+    <allow-intent href="*" />
     <access origin="*" />
+
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <icon src="www/icons/256x256.png" />
     <platform name="amazon-fireos">
         <icon src="www/icons/android-icon-36x36.png" density="ldpi" />
