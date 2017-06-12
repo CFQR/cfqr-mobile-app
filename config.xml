@@ -1,50 +1,79 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="cfqr.questionnaire.app" version="0.17.6" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget
+  xmlns="http://www.w3.org/ns/widgets"
+  xmlns:gap="http://phonegap.com/ns/1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  id="cfqr.questionnaire.app"
+  version="0.17.6"
+>
     <name>CFQR</name>
     <description>CFQ-R questionnaire application</description>
     <author email="cfqr.app@gmail.com" href="https://cfqr.github.io/">CFQR app</author>
-    <content src="index.html" />
+    <content src="index.html"/>
+
+    <gap:plugin name="cordova-plugin-whitelist" source="npm" />
+    <allow-navigation href="*" />
+    <allow-intent href="*" />
     <access origin="*" />
-    <config-file platform="android" parent="/manifest" mode="merge">
-      <application android:debuggable="false" />
-    </config-file>
+
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <icon src="www/icons/256x256.png" />
     <platform name="amazon-fireos">
-        <icon density="ldpi" src="www/icons/android-icon-36x36.png" />
-        <icon density="mdpi" src="www/icons/android-icon-48x48.png" />
-        <icon density="hdpi" src="www/icons/android-icon-72x72.png" />
-        <icon density="xhdpi" src="www/icons/android-icon-96x96.png" />
-        <icon density="xxhdpi" src="www/icons/android-icon-144x144.png" />
-        <icon density="xxxhdpi" src="www/icons/android-icon-192x192.png" />
+        <icon src="www/icons/android-icon-36x36.png" density="ldpi" />
+        <icon src="www/icons/android-icon-48x48.png" density="mdpi" />
+        <icon src="www/icons/android-icon-72x72.png" density="hdpi" />
+        <icon src="www/icons/android-icon-96x96.png" density="xhdpi" />
+        <icon src="www/icons/android-icon-144x144.png" density="xxhdpi" />
+        <icon src="www/icons/android-icon-192x192.png" density="xxxhdpi" />
     </platform>
     <platform name="android">
-        <icon density="ldpi" src="www/icons/android-icon-36x36.png" />
-        <icon density="mdpi" src="www/icons/android-icon-48x48.png" />
-        <icon density="hdpi" src="www/icons/android-icon-72x72.png" />
-        <icon density="xhdpi" src="www/icons/android-icon-96x96.png" />
-        <icon density="xxhdpi" src="www/icons/android-icon-144x144.png" />
-        <icon density="xxxhdpi" src="www/icons/android-icon-192x192.png" />
+        <icon src="www/icons/android-icon-36x36.png" density="ldpi" />
+        <icon src="www/icons/android-icon-48x48.png" density="mdpi" />
+        <icon src="www/icons/android-icon-72x72.png" density="hdpi" />
+        <icon src="www/icons/android-icon-96x96.png" density="xhdpi" />
+        <icon src="www/icons/android-icon-144x144.png" density="xxhdpi" />
+        <icon src="www/icons/android-icon-192x192.png" density="xxxhdpi" />
     </platform>
     <platform name="firefoxos">
-        <icon height="60" src="www/icons/apple-icon-60x60.png" width="60" />
+        <icon src="www/icons/apple-icon-60x60.png" width="60" height="60" />
     </platform>
     <platform name="ios">
-        <icon height="180" src="www/icons/apple-icon-180x180.png" width="180" />
-        <icon height="60" src="www/icons/apple-icon-60x60.png" width="60" />
-        <icon height="120" src="www/icons/apple-icon-120x120.png" width="120" />
-        <icon height="76" src="www/icons/apple-icon-76x76.png" width="76" />
-        <icon height="152" src="www/icons/apple-icon-152x152.png" width="152" />
-        <icon height="57" src="www/icons/apple-icon-57x57.png" width="57" />
-        <icon height="114" src="www/icons/apple-icon-114x114.png" width="114" />
-        <icon height="72" src="www/icons/apple-icon-72x72.png" width="72" />
-        <icon height="144" src="www/icons/apple-icon-144x144.png" width="144" />
+        <!-- iOS 8.0+ -->
+        <!-- iPhone 6 Plus  -->
+        <icon src="www/icons/apple-icon-180x180.png" width="180" height="180" />
+        <!-- iOS 7.0+ -->
+        <!-- iPhone / iPod Touch  -->
+        <icon src="www/icons/apple-icon-60x60.png" width="60" height="60" />
+        <icon src="www/icons/apple-icon-120x120.png" width="120" height="120" />
+        <!-- iPad -->
+        <icon src="www/icons/apple-icon-76x76.png" width="76" height="76" />
+        <icon src="www/icons/apple-icon-152x152.png" width="152" height="152" />
+        <!-- iOS 6.1 -->
+        <!-- Spotlight Icon -->
+        <!-- <icon src="res/ios/icon-40.png" width="40" height="40" />
+            <icon src="res/ios/icon-40@2x.png" width="80" height="80" /> -->
+        <!-- iPhone / iPod Touch -->
+        <icon src="www/icons/apple-icon-57x57.png" width="57" height="57" />
+        <icon src="www/icons/apple-icon-114x114.png" width="114" height="114" />
+        <!-- iPad -->
+        <icon src="www/icons/apple-icon-72x72.png" width="72" height="72" />
+        <icon src="www/icons/apple-icon-144x144.png" width="144" height="144" />
+        <!-- iPhone Spotlight and Settings Icon -->
+        <!-- <icon src="res/ios/icon-small.png" width="29" height="29" />
+            <icon src="res/ios/icon-small@2x.png" width="58" height="58" /> -->
+        <!-- iPad Spotlight and Settings Icon -->
+        <!-- <icon src="res/ios/icon-50.png" width="50" height="50" />
+            <icon src="res/ios/icon-50@2x.png" width="100" height="100" /> -->
     </platform>
     <platform name="tizen">
-        <icon height="128" src="www/icons/128x128.png" width="128" />
+        <icon src="www/icons/128x128.png" width="128" height="128" />
     </platform>
     <platform name="windows8">
-        <icon height="150" src="www/icons/ms-icon150x150.png" width="150" />
+        <icon src="www/icons/ms-icon150x150.png" width="150" height="150" />
     </platform>
-    <engine name="ios" spec="~4.4.0" />
 </widget>
