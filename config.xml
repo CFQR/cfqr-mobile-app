@@ -76,4 +76,5 @@
     <platform name="windows8">
         <icon src="www/icons/ms-icon150x150.png" width="150" height="150" />
     </platform>
+    <preference name="phonegap-version" value="cli-8.0.0" />
 </widget>
