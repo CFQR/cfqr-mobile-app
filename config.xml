@@ -4,7 +4,7 @@
   xmlns:gap="http://phonegap.com/ns/1.0"
   xmlns:android="http://schemas.android.com/apk/res/android"
   id="cfqr.questionnaire.app"
-  version="0.17.9"
+  version="0.18.0"
 >
     <name>CFQR</name>
     <description>CFQ-R questionnaire application</description>
@@ -76,5 +76,5 @@
     <platform name="windows8">
         <icon src="www/icons/ms-icon150x150.png" width="150" height="150" />
     </platform>
-    <preference name="phonegap-version" value="cli-8.0.0" />
+    <preference name="phonegap-version" value="cli-9.0.0" />
 </widget>
