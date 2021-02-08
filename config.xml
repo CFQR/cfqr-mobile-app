@@ -4,7 +4,7 @@
   xmlns:gap="http://phonegap.com/ns/1.0"
   xmlns:android="http://schemas.android.com/apk/res/android"
   id="cfqr.questionnaire.app"
-  version="0.19.0"
+  version="0.19.1"
 >
     <name>CFQR</name>
     <description>CFQ-R questionnaire application</description>
