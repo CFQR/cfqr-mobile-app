@@ -77,4 +77,5 @@
         <icon src="www/icons/ms-icon150x150.png" width="150" height="150" />
     </platform>
     <preference name="phonegap-version" value="cli-9.0.0" />
+    <preference name="android-targetSdkVersion" value="29" />
 </widget>
